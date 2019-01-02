@@ -1,20 +1,31 @@
 {
-  "name": "adminlte-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14"
-  },
-  "scripts": {
-    "start": "cross-env PORT=8007 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "cross-env": "^5.2.0"
-  }
+	"name": "adminlte-react",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"classnames": "^2.2.6",
+		"jquery": "^3.3.1",
+		"lodash": "^4.17.11",
+		"node-sass": "^4.11.0",
+		"prop-types": "^15.6.2",
+		"react": "^16.6.0",
+		"react-bootstrap": "^0.32.4",
+		"react-bootstrap-slider": "^2.1.5",
+		"react-dom": "^16.0.0",
+		"react-router-dom": "^4.2.2",
+		"react-scripts": "1.0.14",
+		"react-select2-wrapper": "^1.0.4-beta6",
+		"react-sortablejs": "^1.4.0",
+		"sortablejs": "^1.6.1"
+	},
+	"scripts": {
+		"start": "cross-env PORT=8007 react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"devDependencies": {
+		"cross-env": "^5.2.0",
+		"eslint": "^5.11.1"
+	}
 }
