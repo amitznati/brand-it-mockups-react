@@ -6,8 +6,8 @@ export default function LayoutProperties() {
 	return (
 		<Box className="box-solid">
 			<BoxHeader 
-				title="Template Properties" 
-				icon="fa fa-list"
+				title="Layout Properties" 
+				icon="fa fa-cogs"
 				boxTool={{collapse: true}}/>
 			<BoxBody>
 				<Row>

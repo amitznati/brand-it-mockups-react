@@ -6,7 +6,7 @@ import Select2 from 'react-select2-wrapper';
 
 export default function TemplateProperties() {
 	return (
-		<Box className="box-solid" dataWidget="box-widget-sec">
+		<Box className="box-solid">
 			<BoxHeader 
 				title="Template Properties" 
 				icon="fa fa-list"
