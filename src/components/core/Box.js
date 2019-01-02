@@ -1,13 +1,15 @@
 import React from 'react';
-
-export default function Box({ children, className, dataWidget }) {
-	let cn = 'box ';
-	if(className) {
-		cn += className;
-	}
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+export default function Box({ children, className }) {
 	return (
-		<div className={cn} data-widget={dataWidget}>
+		<div className={classNames('box',className)}>
 			{children}
 		</div>
 	);
 }
+
+Box.propTypes = {
+	children: PropTypes.any,
+	className: PropTypes.string,
+};

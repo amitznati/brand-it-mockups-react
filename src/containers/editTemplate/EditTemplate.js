@@ -6,7 +6,7 @@ import LayoutsList from './components/LayoutsList';
 import TemplateProperties from './components/TemplateProperties';
 //import LayoutProperties from './components/LayoutProperties';
 //import TemplatePreview from './components/TemplatePreview';
-import './editTemplate.scss';
+import './editTemplate.css';
 
 export default class EditTemplate extends Component {
 

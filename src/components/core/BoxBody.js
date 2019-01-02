@@ -1,12 +1,13 @@
 import React from 'react';
-
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 export default function BoxBody({ className, children }) {
-	let cn = 'box-body ';
-	if(className) {
-		cn += className;
-	}
 	return (
-		<div className={cn}>{children}</div>
+		<div className={classNames('box-body',className)}>{children}</div>
 		
 	);
 }
+BoxBody.propTypes = {
+	children: PropTypes.any,
+	className: PropTypes.string,
+};

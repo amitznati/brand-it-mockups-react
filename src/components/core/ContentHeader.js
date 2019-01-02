@@ -1,8 +1,9 @@
 import React from 'react';
-
-export default function ContentHeader({ title, small }) {
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+export default function ContentHeader({ className, title, small }) {
 	return (
-		<section className="content-header">
+		<section className={classNames('content-header',className)}>
 			<h1>
 				{title}
 				<small>{small}</small>
@@ -14,3 +15,9 @@ export default function ContentHeader({ title, small }) {
 		</section>
 	);
 }
+
+ContentHeader.propTypes = {
+	className: PropTypes.string,
+	title: PropTypes.string,
+	small: PropTypes.string
+};

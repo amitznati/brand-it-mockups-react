@@ -1,11 +1,12 @@
 import React from 'react';
-
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 export default function Content({ className, children }) {
-	let cn = 'content ';
-	if(className) {
-		cn += className;
-	}
 	return (
-		<div className={cn}>{children}</div>
+		<div className={classNames('content', className)}>{children}</div>
 	);
 }
+Content.propTypes = {
+	children: PropTypes.any,
+	className: PropTypes.string,
+};

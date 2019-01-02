@@ -1,17 +1,17 @@
 import React from 'react';
-//import Sortable from 'react-jquery-sortable';
-import {Box, BoxHeader, BoxBody, SortableContainer} from '../../../components/core';
+import PropTypes from 'prop-types';
+import {Box, BoxHeader, BoxBody, SortableContainer, BoxFooter} from '../../../components/core';
 // const layouts = [
 // 	'hi hi1', 'hi2', 'sdfsdf'
 // ];
 
-export default function LayoutsList({ title, small, onChange }) {
+export default function LayoutsList({ onChange }) {
 	return (
 		<Box className="border-radius-none">
 			<BoxHeader title="Layouts" boxTool={{collapse: true}} />
 			<BoxBody>
 				<SortableContainer tag="ul" className="todo-list"
-					onChange={console.log}>
+					onChange={onChange || console.log}>
 					<li data-layout-type="image"	className="layout-item" data-id={1}>
 						
 						<span className="handle">
@@ -21,7 +21,7 @@ export default function LayoutsList({ title, small, onChange }) {
 						<i className="fa fa-eye"></i>
 						
 						<span className="product-img">
-							<img style={{height: '30px'}} src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="Product Image"/>
+							<img alt="layout" src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg"/>
 						</span>
 						
 						
@@ -39,7 +39,7 @@ export default function LayoutsList({ title, small, onChange }) {
 						<i className="fa fa-eye"></i>
 						
 						<span className="product-img">
-							<img style={{height: '30px'}} src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg" alt="Product Image"/>
+							<img alt="layout2"	src="https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg"/>
 						</span>
 						
 						
@@ -82,6 +82,17 @@ export default function LayoutsList({ title, small, onChange }) {
 					</li>
 				</SortableContainer>
 			</BoxBody>
+			<BoxFooter>
+				<button type="button" className="pull-right btn btn-default" >
+					Add Item
+					<i className="fa fa-plus"></i>
+				</button>
+												
+			</BoxFooter>
 		</Box>
 	);
 }
+
+LayoutsList.propTypes = {
+	onChange: PropTypes.func
+};
